@@ -95,7 +95,7 @@ include "header.php";
 		color: grey;
 	}
 
-	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+	
 	@media (max-width: 800px) {
 		.row-checkout {
 			flex-direction: column-reverse;
@@ -136,14 +136,8 @@ include "header.php";
 						<input type="text" id="city" name="city" class="form-control" value="' . $row["address2"] . '" pattern="^[a-zA-Z ]+$" required>
 
 						<div class="row">
-						<div class="col-50">
-							<label for="state">State</label>
-							<input type="text" id="state" name="state" class="form-control" pattern="^[a-zA-Z ]+$" required>
-						</div>
-						<div class="col-50">
-							<label for="zip">Zip</label>
-							<input type="text" id="zip" name="zip" class="form-control" pattern="^[0-9]{6}(?:-[0-9]{4})?$" required>
-						</div>
+					
+					
 						</div>
 					</div>
 					
@@ -171,13 +165,7 @@ include "header.php";
 						
 
 						<div class="row">
-						
-						<div class="col-50">
-							<div class="form-group CVV">
-								<label for="cvv">CVV</label>
-								<input type="text" class="form-control" name="cvv" id="cvv" required>
-						</div>
-						</div>
+					
 					</div>
 					</div>
 					</div>
